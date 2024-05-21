@@ -44,7 +44,7 @@ jobs:
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
       - name: Run install react js
-        run: npm install react react-dom
+        run: npm install next@latest react@latest react-dom@latest
       - name: install next.js
         run: npm install next
 
