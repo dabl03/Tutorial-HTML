@@ -8,9 +8,6 @@ const Layout =({child}) =>{
         </head>
         <body>
           <div>
-            <ToolBar/>
-            <Sides/>
-            <Backdrop/>
           </div>
           <main>{child}</main>
         </body>
