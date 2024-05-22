@@ -41,7 +41,7 @@ jobs:
         run: npm run build
       - name: Create out branch and merge changes.
         run: |
-          echo https://x-access-token:${{ vars_dabl03.TOKEN_GITHUB }}@github.com/$GITHUB_REPOS
+          echo https://x-access-token:${{ secrets.TOKEN_GITHUB }}@github.com/$GITHUB_REPOS
           git config --global user.name 'dabl03'
           git config --global user.email 'dabl03@outlook.com'
           git checkout -b out
