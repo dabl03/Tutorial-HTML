@@ -41,7 +41,14 @@ jobs:
         run: npm run build
       - name: Create out branch and merge changes.
         run: |
+          git config --global user.name 'dabl03'
+          git config --global user.email 'dabl03@outlook.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOS
           git checkout -b out
           git merge main
           git push origin out
-      
+      #uses: actions/upload-artifact@v4.3.3
+      #with:
+      #    name: Paginas estaticas
+      #    path: out/
+      #
