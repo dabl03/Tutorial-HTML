@@ -35,7 +35,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Install dependencia
+      - name: Instalar typescript
+        run: npm install -D typescript
+      - name: Instalar dependencias
         run: npm install
       - name: build all
         run: npm run build
