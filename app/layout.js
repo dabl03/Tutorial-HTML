@@ -7,7 +7,7 @@ const Layout =() =>{
         <head>
         </head>
         <body>
-          <main></main>
+          <main><Page /></main>
         </body>
         </html>
         </>
