@@ -39,3 +39,9 @@ jobs:
         run: npm install
       - name: build all
         run: npm run build
+      - name: Create out branch and merge changes
+        run: |
+          git checkout -b out
+          git merge main
+          git push origin out
+      
