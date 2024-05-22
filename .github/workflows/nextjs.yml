@@ -35,10 +35,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-      # - name: Instalar typescript
-      #   run: npm install -D typescript
-      # - name: Instalar react and node
-      #   run: npm install --save-dev @types/react @types/node
       - name: Install all packages
         run: npm install
       - name: build all
