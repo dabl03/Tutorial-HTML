@@ -1,13 +1,18 @@
 import React from 'react';
 
-const Layout =() =>{
+const Layout =({child}) =>{
     return(
         <>
         <html lang="es">
         <head>
         </head>
         <body>
-          <main><Page /></main>
+          <div>
+            <ToolBar/>
+            <Sides/>
+            <Backdrop/>
+          </div>
+          <main>{child}</main>
         </body>
         </html>
         </>
