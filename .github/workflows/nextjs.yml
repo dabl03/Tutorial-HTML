@@ -37,7 +37,9 @@ jobs:
           node-version: "20"
       - name: Instalar typescript
         run: npm install -D typescript
-      - name: Instalar dependencias
+      - name: Instalar react and node
+        run: npm install --save-dev @types/react @types/node
+      - name: Install all packages:
         run: npm install
       - name: build all
         run: npm run build
